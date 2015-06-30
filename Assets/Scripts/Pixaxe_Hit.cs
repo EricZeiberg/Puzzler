@@ -11,12 +11,18 @@ public class Pixaxe_Hit : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonUp (1)) {
 			if (StaticVars.isPickedUp()) {
-				iTween.RotateTo(pixaxe, new Vector3(0,0,327), 0.5);
+				StartCoroutine(DoMoving());
 				
-				iTween.RotateTo(pixaxe, new Vector3(0,0,-16), 0.5);
 			}
 
 		}
+	}
+
+	IEnumerator DoMoving()
+	{
+		iTween.RotateTo(pixaxe, iTween.Hash ("z", 327, "isLocal", true, "time", 0.5f));
+		yield return new WaitForSeconds(1);
+		iTween.RotateTo(pixaxe, iTween.Hash ("z", 358, "isocal", true, "time", 0.5f));
 	}
 
 }
