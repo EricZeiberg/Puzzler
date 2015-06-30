@@ -7,6 +7,9 @@ public class Pixaxe_Hit : MonoBehaviour {
 	public int speed;
 	public GameObject pixaxe;
 
+	
+
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonUp (1)) {

@@ -38,7 +38,7 @@ public class CameraMovement : MonoBehaviour {
 			transform.rotation.Set(transform.rotation.x, transform.rotation.y + rotation_speed, transform.rotation.z, transform.rotation.w);
 		}
 
-		transform.position = new Vector3(transform.position.x, lock_y, transform.position.z);
+		//transform.position = new Vector3(transform.position.x, lock_y, transform.position.z);
 
 	}
 
