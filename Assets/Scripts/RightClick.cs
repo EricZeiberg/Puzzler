@@ -9,7 +9,7 @@ public class RightClick : MonoBehaviour {
 	public GameObject parent_to;
 	public GameObject hand_obj;
 
-	public static bool pickedUp = false;
+
 	
 	void Update()
 	{
@@ -17,14 +17,14 @@ public class RightClick : MonoBehaviour {
 			ray = Camera.allCameras[0].ScreenPointToRay(Input.mousePosition);
 			if(Physics.Raycast(ray, out hit))
 			{
-				if (hit.collider.gameObject.tag.Equals("Holdable") && !pickedUp) {
+				if (hit.collider.gameObject.tag.Equals("Holdable") && !StaticVars.isPickedUp()) {
 					Vector3 colliderVector = hit.collider.gameObject.transform.position;
 					hit.collider.gameObject.transform.SetParent(parent_to.transform);
 					Quaternion rotation = hit.collider.gameObject.transform.rotation;
 					hit.collider.gameObject.transform.localPosition = new Vector3(11, -15, 36);
-					hit.collider.gameObject.transform.rotation = Quaternion.Euler(11, 8, -1);
+					hit.collider.gameObject.transform.rotation = Quaternion.Euler(359, 238, 16);
 					hand_obj.SetActive(false);
-					pickedUp = true;
+					StaticVars.setPickedUp(true);
 				}
 			}
 		}
