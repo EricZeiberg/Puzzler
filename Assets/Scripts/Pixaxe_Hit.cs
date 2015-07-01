@@ -23,9 +23,9 @@ public class Pixaxe_Hit : MonoBehaviour {
 
 	IEnumerator DoMoving()
 	{
-		iTween.RotateTo(pixaxe, iTween.Hash ("z", 327, "isLocal", true, "time", 0.5f));
-		yield return new WaitForSeconds(1);
-		iTween.RotateTo(pixaxe, iTween.Hash ("z", 358, "isocal", true, "time", 0.5f));
+		iTween.RotateTo(pixaxe, iTween.Hash ("z", 327, "isLocal", true, "time", 0.3f));
+		yield return new WaitForSeconds(0.5f);
+		iTween.RotateTo(pixaxe, iTween.Hash ("z", 358, "isocal", true, "time", 0.3f));
 	}
 
 }

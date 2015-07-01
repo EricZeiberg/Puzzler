@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraJump.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\MouseMove.cs" />
      <Compile Include="Assets\Scripts\Pixaxe_Hit.cs" />
      <Compile Include="Assets\Scripts\RightClick.cs" />
