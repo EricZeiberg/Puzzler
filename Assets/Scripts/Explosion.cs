@@ -27,7 +27,6 @@ public class Explosion : MonoBehaviour {
 					currentHealth -= 1;
 					if (currentHealth == -5) {
 						hit.collider.gameObject.SetActive(false);
-						print ("HI");
 					}
 				}
 			}
