@@ -15,7 +15,7 @@ public class RightClick : MonoBehaviour {
 
 		if (Input.GetMouseButton (0)) {
 			ray = Camera.allCameras[0].ScreenPointToRay(Input.mousePosition);
-			if(Physics.Raycast(ray, out hit))
+			if(Physics.Raycast(ray, out hit, 150))
 			{
 				if (hit.collider.gameObject.tag.Equals("Holdable") && !StaticVars.isPickedUp()) {
 					Vector3 colliderVector = hit.collider.gameObject.transform.position;
