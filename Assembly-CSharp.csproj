@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\MouseMove.cs" />
      <Compile Include="Assets\Scripts\Pixaxe_Hit.cs" />
+     <Compile Include="Assets\Scripts\ProjectileAI.cs" />
      <Compile Include="Assets\Scripts\RightClick.cs" />
      <Compile Include="Assets\Scripts\SentryAI.cs" />
      <Compile Include="Assets\Scripts\StaticVars.cs" />
